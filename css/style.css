@@ -48,6 +48,10 @@ section {
 
 /* Header section style */
 
+.container{
+width: 100%;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -70,9 +74,10 @@ section {
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
-    opacity: 0;
+    opacity: 1;
     animation: slideRight 1s ease forwards;
 }
+
 
 .navbar a{
     display: inline-block;
@@ -222,7 +227,7 @@ span{
 }
 
 .services h2{
-    margin-bottom: 5rems;
+    margin-bottom: 5rem;
 }
 
 .services-container{
@@ -559,13 +564,6 @@ span{
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 620px) {
     .portfolio-container {
         grid-template-columns: 1fr;
@@ -583,6 +581,7 @@ span{
 }
 
 @media (max-width: 365px) {
+
     .home-img img{
         width: 90vw;
     }
@@ -593,6 +592,7 @@ span{
 
     .footer {
         flex-direction: column-reverse;
+        width: 100%;
     }
 
     .footer p {
